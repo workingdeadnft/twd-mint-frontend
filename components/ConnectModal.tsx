@@ -89,7 +89,7 @@ export default function ConnectModal({ setOpen, walletSelected }) {
                     className="bg-transparent transition-colors border-[1px] border-[#3F5169]   hover:border-[#2A3749] hover:bg-[#2A3749] hover:shadow-xl rounded-[9px] h-[60px] w-9/12 mt-4  flex items-center"
                     onClick={() => {
                       activate(injected);
-                      walletSelected("Metamask");
+                      walletSelected(account);
                       setOpen(false);
                     }}
                   >
@@ -135,7 +135,7 @@ export default function ConnectModal({ setOpen, walletSelected }) {
                     className="bg-transparent transition-colors border-[1px] border-[#3F5169]   hover:border-[#2A3749] hover:bg-[#2A3749] hover:shadow-xl rounded-[9px] h-[60px] w-9/12 mt-4  flex items-center"
                     onClick={() => {
                       activate(walletlink);
-                      walletSelected("Coinbase");
+                      walletSelected(account);
                       setOpen(false);
                     }}
                   >
