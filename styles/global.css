@@ -1,0 +1,72 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800&display=swap");
+
+@font-face {
+  font-family: "Greycliff CF";
+  src: url("./GreycliffCF-Heavy.woff2") format("woff2"),
+    url("./GreycliffCF-Heavy.woff") format("woff"),
+    url("./GreycliffCF-Heavy.ttf") format("truetype");
+  font-weight: 900;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Druk Wide";
+  src: url("./DrukWideBold.ttf") format("truetype");
+  font-weight: 900;
+  font-style: normal;
+  font-display: swap;
+}
+
+* {
+  font-family: "Inter", sans-serif;
+}
+
+input::placeholder {
+  color: #4e5e73;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+#mainContainer {
+  background-image: url("/images/main-bg.png");
+}
+
+@media only screen and (max-width: 1000px) {
+  #mainContainer {
+    background-image: url("/images/mobile-bg.png");
+    background-size: cover !important;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  #desktopConnect {
+    display: none;
+  }
+
+  #mobileConnect {
+    display: flex;
+  }
+}
+<<<<<<< Updated upstream
+=======
+
+#twdsLogo {
+  background: linear-gradient(
+    270deg,
+    rgba(127, 131, 130, 0) -24.87%,
+    rgba(127, 131, 130, 0.74) 51.02%
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-fill-color: transparent;
+}
+>>>>>>> Stashed changes
