@@ -77,7 +77,7 @@ export default function MintModal({ setMintPending }) {
                 <div className="flex justify-center items-center">
                   {pending ? (
                     <div className="flex flex-col justify-center items-center gap-2 mb-2">
-                      <img className="h-16 w-16" src="/images/loading.gif" />
+                      <img className="h-16 w-16" src="/images/twd.gif" />
                       <p className="text-white">Minting in progress</p>
                     </div>
                   ) : (
